@@ -4,13 +4,11 @@
 
 **a. Initial design**
 
-- Briefly describe your initial UML design.
-- What classes did you include, and what responsibilities did you assign to each?
+My initial UML design included four main classes: Owner, Pet, Task, and Scheduler. The Owner class manages multiple pets, the Pet class stores information about each pet and its tasks, the Task class represents individual activities like feeding or walking, and the Scheduler organizes tasks across pets. Each class was designed to reflect real-world responsibilities in a simple and modular way.
 
 **b. Design changes**
 
-- Did your design change during implementation?
-- If yes, describe at least one change and why you made it.
+During implementation, I simplified my design to focus on core functionality. Initially, I considered adding more complex relationships and features, but I decided to keep the structure minimal so that the system would be easier to implement and debug. This made the code more readable and easier to manage.
 
 ---
 
@@ -18,13 +16,11 @@
 
 **a. Constraints and priorities**
 
-- What constraints does your scheduler consider (for example: time, priority, preferences)?
-- How did you decide which constraints mattered most?
+My scheduler considers time as the main constraint by sorting tasks based on their scheduled time. I prioritized time because it is the most important factor for organizing daily pet care tasks in a simple system.
 
 **b. Tradeoffs**
 
-- Describe one tradeoff your scheduler makes.
-- Why is that tradeoff reasonable for this scenario?
+One tradeoff I made was not implementing conflict detection or overlapping task handling. While this limits the system’s ability to manage complex schedules, it keeps the implementation simple and ensures the core functionality works correctly.
 
 ---
 
@@ -32,13 +28,11 @@
 
 **a. How you used AI**
 
-- How did you use AI tools during this project (for example: design brainstorming, debugging, refactoring)?
-- What kinds of prompts or questions were most helpful?
+I used AI tools to help structure my class design, generate starter code, and debug issues. AI was especially helpful in organizing the relationships between classes and suggesting cleaner implementations for functions.
 
 **b. Judgment and verification**
 
-- Describe one moment where you did not accept an AI suggestion as-is.
-- How did you evaluate or verify what the AI suggested?
+There were times when AI suggested more complex solutions than necessary. I chose to simplify those suggestions to keep the system easier to understand and maintain. I verified AI suggestions by testing the code and making sure it worked as expected.
 
 ---
 
@@ -46,13 +40,11 @@
 
 **a. What you tested**
 
-- What behaviors did you test?
-- Why were these tests important?
+I tested basic behaviors such as adding tasks to pets, storing pets under an owner, and sorting tasks by time. These tests were important to ensure the system correctly organizes and displays the schedule.
 
 **b. Confidence**
 
-- How confident are you that your scheduler works correctly?
-- What edge cases would you test next if you had more time?
+I am moderately confident that my scheduler works for basic use cases. If I had more time, I would test edge cases such as empty task lists, duplicate times, and invalid inputs.
 
 ---
 
@@ -60,12 +52,12 @@
 
 **a. What went well**
 
-- What part of this project are you most satisfied with?
+The part I am most satisfied with is the class structure. The system is modular and clearly separates responsibilities between different components.
 
 **b. What you would improve**
 
-- If you had another iteration, what would you improve or redesign?
+If I had another iteration, I would improve the scheduler by adding conflict detection and support for recurring tasks. I would also enhance the UI integration.
 
 **c. Key takeaway**
 
-- What is one important thing you learned about designing systems or working with AI on this project?
+One key takeaway from this project is that designing a clean system structure is just as important as writing the code. Working with AI also showed me the importance of reviewing and simplifying suggestions instead of blindly accepting them.
